@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Games Store</title>
+  <!-- Logo of the website -->
+   <link rel="shortcut icon" type="image/png"  href="Images/GS2.png" sizes="16x16" >
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="Library/bootstrap/css/bootstrap copy 3.css" rel="stylesheet">
+  <!-- Custom styles for this template -->
+  <link href="Library/css/shop-homepage.css" rel="stylesheet">
+  <link href="Library/css/Signup_Style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="../Index.html"><img src="Images/GS3.png"> <strong> Games Store</strong></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="../Index.html">Home
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+
+<!--        LOG IN        -->
+
+    <li class="nav-item">
+<a class="nav-link"  onclick="document.getElementById('id01').style.display='block'" href="#">Sign up</a>
+
+<div id="id01" class="modal">
+  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+  <form class="modal-content" action="/action_page.php">
+    <div class="container">
+      <h1>Sign Up</h1>
+      <p>Please fill in this form to create an account.</p>
+      <hr>
+      <label for="email"><b>Email</b></label>
+      <input type="text" placeholder="Enter Email" name="email" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+
+      <label for="psw-repeat"><b>Repeat Password</b></label>
+      <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+
+      <label>
+        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+      </label>
+      <p>Continue as a <a href="#" style="color:dodgerblue">Guest</a>.</p>
+
+        <div class="clearfix">
+          <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+          <button type="submit" class="signupbtn">Sign Up</button>
+      </div>
+    </div>
+  </form>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+
+function CartAlert(){
+alert("Cart is under construction! We are working on it ");
+}
+
+</script>
+  </li>
+<!--        End LOG IN        -->
+
+<li class="nav-item">
+  <a class="nav-link" onclick="CartAlert()" href="#">Cart <i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+</li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+<!-- Margin top-right -->
+  <br>
+    <h2 class="my-4 mx-4"><strong>Shopping Cart</strong></h2>
+  <hr class="alert-dark">
+        <div class="container">
+          <div class="row">
+        <aside class="col-md-large offset-md-auto ">
+        <article class="cardi">
+        <div class="cardi-body p-5">
+
+          <table class="table table-hover table-condensed table-dark">
+              				<thead>
+          						<tr>
+          							<th style="width:100%">Game</th>
+          							<th style="width:10%">Price</th>
+          							<th style="width:8%">Quantity</th>
+          							<th style="width:22%" class="text-center">Subtotal</th>
+          							<th style="width:10%"></th>
+          						</tr>
+          					</thead>
+          					<tbody>
+          						<tr>
+          							<td data-th="Product">
+          								<div class="row">
+          									<div class="col-md-10">
+          										<h4>Marvel's Spider-Man</h4>
+          										<p>Full Game Bundle.</p>
+          									</div>
+          								</div>
+          							</td>
+          							<td data-th="Price">$59.99</td>
+          							<td data-th="Quantity">
+          								<input type="number" class="form-control text-center" value="1">
+          							</td>
+          							<td data-th="Subtotal" class="text-center">59.99</td>
+          							<td class="actions" data-th="">
+          								<button class="btn btn-info btn-sm"><i class="fa fa-refresh"> Update</i></button>
+          								<button class="btn btn-danger btn-sm"><i class="fa fa-trash-o"> Delete</i></button>
+          							</td>
+          						</tr>
+          					</tbody>
+                    <tr>
+                      <td data-th="Product">
+                        <div class="row">
+                          <div class="col-md-10">
+                            <h4>Forza Motorsport 7</h4>
+                            <p>Full Game Bundle Plus Deluxe Package</p>
+                          </div>
+                        </div>
+                      </td>
+                      <td data-th="Price">$62.99</td>
+                      <td data-th="Quantity">
+                        <input type="number" class="form-control text-center" value="1">
+                      </td>
+                      <td data-th="Subtotal" class="text-center">$62.99</td>
+                      <td class="actions" data-th="">
+                        <button class="btn btn-info btn-sm"><i class="fa fa-refresh"> Update</i></button>
+                        <button class="btn btn-danger btn-sm"><i class="fa fa-trash-o"> Delete</i></button>
+                      </td>
+                    </tr>
+                    <tbody>
+                    <tr>
+                      <td data-th="Product">
+                        <div class="row">
+                          <div class="col-md-10">
+                            <h4>The Legend of Zelda: Breath of the Wild</h4>
+                            <p>Full Game Bundle Plus DLCs.</p>
+                          </div>
+                        </div>
+                      </td>
+                      <td data-th="Price">$59.99</td>
+                      <td data-th="Quantity">
+                        <input type="number" class="form-control text-center" value="1">
+                      </td>
+                      <td data-th="Subtotal" class="text-center">$59.99</td>
+                      <td class="actions" data-th="">
+                        <button class="btn btn-info btn-sm"><i class="fa fa-refresh"> Update</i></button>
+                        <button class="btn btn-danger btn-sm"><i class="fa fa-trash-o"> Delete</i></button>
+                      </td>
+                    </tr>
+                  </tbody>
+          					<tfoot>
+          						<tr>
+          							<td><a href="../Index.html" class="btn btn-warning"><i class="fa fa-angle-left"></i> Continue Shopping</a></td>
+          							<td colspan="2" class="hidden-xs"></td>
+          							<td class="text-center"><strong>Total $182.97</strong></td>
+          							<td><a href="Billing Address.html" class="btn btn-success btn-block_1">Checkout <i class="fa fa-angle-right"></i></a></td>
+          						</tr>
+          					</tfoot>
+          				</table>
+
+          </div>
+        </div> <!-- tab-pane.// -->
+        </div> <!-- tab-content .// -->
+
+        </article> <!-- card.// -->
+
+
+          </aside> <!-- col.// -->
+        </div> <!-- row.// -->
+        <br>
+        <!--container end.//-->
+
+
+  <!-- Footer -->
+  <!--  Reminder I have * modifed the py-5 margin -->
+  <footer class="py-5 px-5 bg-dark">
+    <div class="container">
+      <p class="m-0 text-center text-white">Copyright &copy; Games Store</p>
+    </div>
+    <!-- /.container -->
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="Library/jquery/jquery.min.js"></script>
+  <script src="Library/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+</div>
+</body>
+
+</html>
